@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+<body class="m-4">
+    <div>
+        <h4>Fill in the data below:</h4>
+        <form class="form-text form-control">
+            <div>
+                <label for="time">Time Period</label>
+                <select id="time" name="time">
+                    <option value="day">Last Hour</option>
+                    <option value="week">Last Day</option>
+                    <option value="month">Last Week</option>
+                </select>
+            </div>
+            <div class="m-2">
+                <label for="period">Period</label>
+                <input id="period" type="text">
+                <div class="m-2">
+                    <label for="ip">IP Address</label>
+                    <input id="ip" type="text" value="172.31.74.202">
+                </div>
+            </div>
+            <div>
+                <input type="submit" class="btn btn-secondary btn-sm" value="Load Results">
+            </div>
+        </form>
+        <canvas id="myChart" style="width:100%;max-width:800px"></canvas>
+    </div>
+</body>
+<script src="linearchart.js"></script>
+
+</html>
